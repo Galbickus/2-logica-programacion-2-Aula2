@@ -58,6 +58,11 @@ function saludar(){
    /*5. Crear una función que reciba dos números como
     parámetros y devuelva el mayor de ellos. */
 
+    function determinarMayor(numero, numero3){
+    return (numero < numero3 ? numero3:numero);
+//    let mayor = determinarMayor(numero, numero3);
+//    console.log(`El mayor entre ${numero} y ${numero3} es ${mayor}`)
+    }
 
 
 
@@ -73,3 +78,6 @@ saludarConNombre(nombre);
 saludarConNombre2("Galbi");
 duplicar(numero);
 promediar3(numero1 ,numero2, numero3);
+let mayor = determinarMayor(numero,numero3);
+console.log(`El mayor entre ${numero} y ${numero3} es ${mayor}`)
+
