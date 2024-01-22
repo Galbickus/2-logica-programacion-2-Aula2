@@ -60,24 +60,35 @@ function saludar(){
 
     function determinarMayor(numero, numero3){
     return (numero < numero3 ? numero3:numero);
-//    let mayor = determinarMayor(numero, numero3);
-//    console.log(`El mayor entre ${numero} y ${numero3} es ${mayor}`)
-    }
+    };
 
-
-
-
-  
-
+    /*6. Crear una función que reciba un número
+     como parámetro y devuelva el resultado de multiplicar ese número por sí mismo. */
+ 
+    function elevarALa2(numAElevar){
+        let elevado = numAElevar * numAElevar;
+        return elevado;
+    };
 
 
 
 //llamados
+//1)
 saludar();
+//2)
 saludarConNombre(nombre);
+//2)
 saludarConNombre2("Galbi");
+//3)
 duplicar(numero);
+//4)
 promediar3(numero1 ,numero2, numero3);
+//5)
 let mayor = determinarMayor(numero,numero3);
-console.log(`El mayor entre ${numero} y ${numero3} es ${mayor}`)
+console.log(`El mayor entre ${numero} y ${numero3} es ${mayor}`);
+//6)
+let numAElevar = parseInt(prompt("Ingrese un número para conocer su portencia al cuadrado: "));
+let elevado = elevarALa2(numAElevar);
+
+console.log(`${numAElevar} elevado al cuadrado es: ${elevado}`);
 
